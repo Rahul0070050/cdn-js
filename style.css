@@ -2,24 +2,137 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
+
 }
+
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    text-transform: capitalize;
     height: 5rem;
     background-color: #343535;
+    padding: 0 5rem;
 }
+
+nav .last-elms,
+nav .first-elms,
+ul,
+ul li {
+    display: inline;
+}
+
+nav .first-elms img {
+    width: 7rem;
+    margin-right: 2rem;
+}
+
+nav .link-icons {
+    display: inline;
+}
+
+nav .link-icons img {
+    width: 1.5rem;
+}
+
+nav .last-elms {
+    right: 10px;
+}
+
+ul li {
+    cursor: pointer;
+    margin-left: 2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li:hover {
+    color: #969696;
+}
+
 .home {
-    height: 100vh;
-    width: 100vw;
+    z-index: 0;
+    height: 88.2vh;
+    width: 100%;
     position: relative;
 }
-.home .background svg{
-    position: absolute;
-}
-.home .background::before {
-    position: absolute;
-    content: "";
+
+.home .background {
     height: 100%;
+    background-color: #525151;
+}
+
+.home .text {
+    margin: 13rem 0 0 25rem;
+    z-index: 2;
+    position: absolute;
+    top: 20px;
+    color: white;
+    width: 55rem;
+}
+
+.home .text .text-1 {
+    font-size: 3rem;
+}
+
+.home .text .text-2 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.home .text .text-3 {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.home .text input {
+    padding: 0 15px 0 15px;
     width: 100%;
-    background-color: rgb(55, 52, 50);
-    opacity: 0.8;
+    height: 2.4rem;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+}
+.bottom-bar {
+    height: 32.5px;
+    width: 100%;
+    background-color: #d9643a;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+footer {
+    padding-left: 5rem;
+    color: white;
+    background-color: black;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer div {
+    
+}
+footer .image-link .logo{
+    width: 8rem !important;
+    margin-bottom: 1rem;
+}
+footer .image-link div {
+    display: flex;
+}
+footer .image-link div span {
+    height: 25px;
+    border: 1px solid white;
+    margin: 0 5px 0 5px;
+}
+footer .image-link div img {
+    width: 1.5rem;
+}
+
+
+footer .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
